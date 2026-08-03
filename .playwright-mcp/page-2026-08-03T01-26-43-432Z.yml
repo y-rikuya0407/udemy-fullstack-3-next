@@ -1,0 +1,20 @@
+- generic [ref=f1e2]:
+  - navigation [ref=f1e3]:
+    - link "通常版(サーバーサイド)" [ref=f1e4] [cursor=pointer]:
+      - /url: http://localhost:8087/tasks
+    - link "API版(axios)" [ref=f1e5] [cursor=pointer]:
+      - /url: http://localhost:8087/tasks-api
+  - heading "タスク一覧(API版)" [level=1] [ref=f1e7]
+  - paragraph [ref=f1e8]:
+    - text: このページは
+    - code [ref=f1e9]: /api/tasks
+    - text: をaxiosで呼び出し、ページ遷移なしにCRUDを行います。
+  - generic [ref=f1e10]:
+    - generic [ref=f1e11]: タイトル
+    - textbox "タイトル" [ref=f1e12]
+    - generic [ref=f1e13]: 詳細
+    - textbox "詳細" [ref=f1e14]
+    - generic [ref=f1e15]: 期限
+    - textbox "期限" [ref=f1e16]
+    - button "作成" [ref=f1e18] [cursor=pointer]
+  - paragraph [ref=f1e20]: 読み込み中...

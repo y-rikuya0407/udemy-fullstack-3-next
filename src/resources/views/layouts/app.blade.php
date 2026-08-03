@@ -79,10 +79,31 @@
             align-items: center;
             margin-bottom: 16px;
         }
+        nav.top-nav {
+            display: flex;
+            gap: 16px;
+            padding: 12px 0;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+        nav.top-nav a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        nav.top-nav a.active {
+            font-weight: bold;
+            color: #1d4ed8;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <nav class="top-nav">
+            <a href="{{ route('tasks.index') }}" class="{{ request()->routeIs('tasks.index') ? 'active' : '' }}">通常版(サーバーサイド)</a>
+            <a href="{{ route('tasks.api') }}" class="{{ request()->routeIs('tasks.api') ? 'active' : '' }}">API版(axios)</a>
+        </nav>
+
         @if (session('status'))
             <div class="status">{{ session('status') }}</div>
         @endif
@@ -99,5 +120,7 @@
 
         @yield('content')
     </div>
+
+    @stack('scripts')
 </body>
 </html>

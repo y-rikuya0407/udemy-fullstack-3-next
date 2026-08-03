@@ -1,0 +1,57 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "通常版(サーバーサイド)" [ref=e4] [cursor=pointer]:
+      - /url: http://localhost:8087/tasks
+    - link "API版(axios)" [ref=e5] [cursor=pointer]:
+      - /url: http://localhost:8087/tasks-api
+  - heading "タスク一覧(API版)" [level=1] [ref=e7]
+  - paragraph [ref=e8]:
+    - text: このページは
+    - code [ref=e9]: /api/tasks
+    - text: をaxiosで呼び出し、ページ遷移なしにCRUDを行います。
+  - generic [ref=e10]:
+    - heading "タスクを編集" [level=2] [ref=e57]
+    - generic [ref=e12]: タイトル
+    - textbox "タイトル" [ref=e13]: Udemyの学習を行う
+    - generic [ref=e14]: 詳細
+    - textbox "詳細" [ref=e15]
+    - generic [ref=e16]: 期限
+    - textbox "期限" [ref=e17]
+    - generic [ref=e18]:
+      - button "保存" [ref=e58] [cursor=pointer]
+      - button "キャンセル" [ref=e59] [cursor=pointer]
+  - table [ref=e22]:
+    - rowgroup [ref=e23]:
+      - row [ref=e24]:
+        - columnheader "完了" [ref=e25]
+        - columnheader "タイトル" [ref=e26]
+        - columnheader "期限" [ref=e27]
+        - columnheader "操作" [ref=e28]
+    - rowgroup [ref=e29]:
+      - row [ref=e30]:
+        - cell [ref=e31]:
+          - checkbox [ref=e32]
+        - cell "aaa" [ref=e33]
+        - cell "-" [ref=e34]
+        - cell [ref=e35]:
+          - generic [ref=e36]:
+            - button "編集" [ref=e37] [cursor=pointer]
+            - button "削除" [ref=e38] [cursor=pointer]
+      - row [ref=e39]:
+        - cell [ref=e40]:
+          - checkbox [ref=e41]
+        - cell "ピピの散歩" [ref=e42]
+        - cell "-" [ref=e43]
+        - cell [ref=e44]:
+          - generic [ref=e45]:
+            - button "編集" [ref=e46] [cursor=pointer]
+            - button "削除" [ref=e47] [cursor=pointer]
+      - row [ref=e48]:
+        - cell [ref=e49]:
+          - checkbox [ref=e50]
+        - cell "Udemyの学習を行う" [ref=e51]
+        - cell "-" [ref=e52]
+        - cell [ref=e53]:
+          - generic [ref=e54]:
+            - button "編集" [active] [ref=e55] [cursor=pointer]
+            - button "削除" [ref=e56] [cursor=pointer]
