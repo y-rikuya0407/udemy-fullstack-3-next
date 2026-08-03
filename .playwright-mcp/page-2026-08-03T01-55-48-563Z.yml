@@ -1,0 +1,50 @@
+- generic [ref=e3]:
+  - heading "タスク一覧(React版)" [level=1] [ref=e4]
+  - paragraph [ref=e5]:
+    - text: このページはReactからLaravelの
+    - code [ref=e6]: /api/tasks
+    - text: を叩いてCRUDを行います。
+  - generic [ref=e7]:
+    - heading "新規タスク作成" [level=2] [ref=e8]
+    - generic [ref=e9]: タイトル
+    - textbox "タイトル" [ref=e10]
+    - generic [ref=e11]: 詳細
+    - textbox "詳細" [ref=e12]
+    - generic [ref=e13]: 期限
+    - textbox "期限" [ref=e14]
+    - button "作成" [ref=e16] [cursor=pointer]
+  - table [ref=e17]:
+    - rowgroup [ref=e18]:
+      - row [ref=e19]:
+        - columnheader "完了" [ref=e20]
+        - columnheader "タイトル" [ref=e21]
+        - columnheader "期限" [ref=e22]
+        - columnheader "操作" [ref=e23]
+    - rowgroup [ref=e24]:
+      - row [ref=e25]:
+        - cell [ref=e26]:
+          - checkbox [ref=e27]
+        - cell "aaa" [ref=e28]
+        - cell "-" [ref=e29]
+        - cell [ref=e30]:
+          - generic [ref=e31]:
+            - button "編集" [ref=e32] [cursor=pointer]
+            - button "削除" [ref=e33] [cursor=pointer]
+      - row [ref=e34]:
+        - cell [ref=e35]:
+          - checkbox [ref=e36]
+        - cell "ピピの散歩" [ref=e37]
+        - cell "-" [ref=e38]
+        - cell [ref=e39]:
+          - generic [ref=e40]:
+            - button "編集" [ref=e41] [cursor=pointer]
+            - button "削除" [ref=e42] [cursor=pointer]
+      - row [ref=e43]:
+        - cell [ref=e44]:
+          - checkbox [ref=e45]
+        - cell "Udemyの学習を行う(編集済み)" [ref=e46]
+        - cell "-" [ref=e47]
+        - cell [ref=e48]:
+          - generic [ref=e49]:
+            - button "編集" [ref=e50] [cursor=pointer]
+            - button "削除" [ref=e51] [cursor=pointer]
